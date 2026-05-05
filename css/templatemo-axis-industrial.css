@@ -50,7 +50,7 @@ https://templatemo.com/tm-619-axis-industrial
     --shadow-hover: 4px 4px 0px var(--ink);
 
     /* Type Scale */
-    --fs-hero: clamp(4rem, 14vw, 14rem);
+    --fs-hero: clamp(3.6rem, 12vw, 12rem);
     --fs-h1: clamp(2.4rem, 5vw, 5rem);
     --fs-h2: clamp(1.6rem, 3vw, 3rem);
     --fs-h3: clamp(1.1rem, 1.6vw, 1.5rem);
