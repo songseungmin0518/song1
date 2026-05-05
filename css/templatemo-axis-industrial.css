@@ -952,3 +952,59 @@ h1, h2, h3, h4, h5, h6,
 
     .header__status span { display: none; }
 }
+/* MacBook / tablet responsive text fix */
+@media (max-width: 1280px) {
+  .hero__title {
+    font-size: clamp(3rem, 10vw, 8rem);
+    line-height: 0.9;
+    word-break: keep-all;
+  }
+
+  .hero__stat-num,
+  .bento-card__stat,
+  .section__title,
+  .footer__brand-name {
+    font-size: clamp(1.8rem, 4.5vw, 3.5rem);
+    line-height: 1.05;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  .bento-card__title,
+  .stack__card-title {
+    font-size: clamp(1rem, 2.2vw, 1.6rem);
+    line-height: 1.15;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  .bento-card,
+  .stack__card {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__title .line--indent {
+    padding-left: 0;
+  }
+
+  .hero__stats {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hero__stat-num {
+    font-size: clamp(2rem, 10vw, 3.2rem);
+  }
+
+  .header__left {
+    min-width: 0;
+  }
+
+  .header__logo,
+  .header__product {
+    white-space: normal;
+  }
+}
